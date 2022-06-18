@@ -1,8 +1,10 @@
+import React, { useState } from "react";
+
 import "./ExpensesList.css";
-import Card from "./Card";
+import Card from "../UI/Card";
 import ExpenseItem from "./ExpenseItem";
 
-function ExpensesList(props) {
+const ExpensesList = (props) => {
   const expenses = props.expenses;
 
   return (
@@ -12,6 +14,6 @@ function ExpensesList(props) {
       <ExpenseItem expenses={expenses[2]} />
     </Card>
   );
-}
+};
 
 export default ExpensesList;
