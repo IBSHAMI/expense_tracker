@@ -6,6 +6,7 @@ import ExpenseItemDate from "./ExpenseItemDate";
 
 const ExpenseItem = (props) => {
   console.log(props)
+  console.log(props.expenses.id)
   return (
     <Card className="expense-item">
       <ExpenseItemDate date={props.expenses.date} />
